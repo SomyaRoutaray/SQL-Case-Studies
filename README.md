@@ -59,7 +59,11 @@ The **Airline dataset** contains flight information, including **routes, delays,
 - Built performance summaries by **airport and route** using advanced SQL.  
 - Ranked airports using `RANK()` and `DENSE_RANK()` to identify best and worst performers.  
 - Generated actionable insights to improve **flight scheduling and operations**.
-
+- 
+## 📫 Connect with Me  
+- 💼 https://www.linkedin.com/in/somya-routaray-3b0759217/
+- 📧 somyaroutaray1@gmail.com  
+- 🐙https://github.com/SomyaRoutaray
 
 
 
