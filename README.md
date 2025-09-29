@@ -50,9 +50,5 @@ FROM SALES
 GROUP BY product_id;
 
 
----
-📫 Connect with Me
-- 💼 **LinkedIn:** (https://www.linkedin.com/in/somya-routaray-3b0759217/)  
-- 🐙 **GitHub:** (https://github.com/somyaroutaray)  
-- 📧 **Email:** somyaroutaray1@gmail.com  
+
 
