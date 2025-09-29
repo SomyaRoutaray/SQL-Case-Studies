@@ -40,15 +40,7 @@ The **Northwind database** represents a retail company’s operations, with tabl
 - Applied **window functions** for product and region-level ranking.  
 - Conducted **time-series analysis** using `EXTRACT` and `DATE_TRUNC`.
 
-**Sample Query – Ranking Products by Total Quantity Sold:**
-```sql
-SELECT 
-    product_id, 
-    SUM(orderquantity) AS total_quantity,
-    RANK() OVER(ORDER BY SUM(orderquantity) DESC) AS sales_rank
-FROM SALES
-GROUP BY product_id;
----
+
 ## ✈️ Case Study 2 – Airline Dataset *(Operational Analytics)*  
 The **Airline dataset** contains flight information, including **routes, delays, and airport performance**, providing a realistic scenario for analyzing operational efficiency.
 
@@ -67,18 +59,6 @@ The **Airline dataset** contains flight information, including **routes, delays,
 - Built performance summaries by **airport and route** using advanced SQL.  
 - Ranked airports using `RANK()` and `DENSE_RANK()` to identify best and worst performers.  
 - Generated actionable insights to improve **flight scheduling and operations**.
-
----
-
-### **Sample Query – Delay Percentage by Airport**
-```sql
-SELECT 
-    origin_airport, 
-    COUNT(*) AS total_flights,
-    ROUND(SUM(CASE WHEN delay > 0 THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) AS delay_percentage
-FROM FLIGHTS
-GROUP BY origin_airport
-ORDER BY delay_percentage ASC;
 
 
 
